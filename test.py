@@ -6,13 +6,12 @@ from time import *
 lcd = RPi_I2C_driver.lcd(0x3F)
 
 lcd.cursor()
-
-
-lcd.print("Hello")
-
-sleep(1)
-lcd.print(" World!!!", 0.5)
-
-sleep(2)
-
+while True:
+  lcd.print("Hello ChurChur")
+  sleep(2)
+  lcd.print("한글테스트")
+  sleep(2)
+  lcd.print("value")
+  sleep(2)
+  
 lcd.clear()
